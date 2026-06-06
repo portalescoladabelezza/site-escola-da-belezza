@@ -1,0 +1,6 @@
+{
+  "name": "Portal Escola da Beleza",
+  "description": "Portal de conteúdo completo sobre beleza, carreira, cursos e empreendedorismo na área da beleza.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
