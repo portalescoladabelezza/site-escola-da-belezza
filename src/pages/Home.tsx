@@ -39,56 +39,56 @@ export const Home: React.FC<HomeProps> = ({ articles, onNavigate }) => {
   const categories = [
     { 
       name: 'Cabelos', 
-      count: '10+ Artigos', 
+      headline: 'Técnicas, cuidados e tendências capilares', 
       icon: <Scissors size={18} strokeWidth={1.5} />, 
       image: 'https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&q=80&w=400',
       color: 'from-amber-50/20 to-orange-50/10' 
     },
     { 
       name: 'Unhas', 
-      count: '15+ Artigos', 
+      headline: 'Inspirações, técnicas e carreira em manicure', 
       icon: <Sparkles size={18} strokeWidth={1.5} />, 
       image: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&q=80&w=400',
       color: 'from-pink-50/20 to-rose-50/10' 
     },
     { 
       name: 'Maquiagem', 
-      count: '12+ Artigos', 
+      headline: 'Dicas para aprender, praticar e atender melhor', 
       icon: <Palette size={18} strokeWidth={1.5} />, 
       image: 'https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&q=80&w=400',
       color: 'from-rose-50/20 to-purple-50/10' 
     },
     { 
       name: 'Sobrancelhas e Cílios', 
-      count: '8+ Artigos', 
+      headline: 'Design do olhar, técnicas e oportunidades', 
       icon: <Eye size={18} strokeWidth={1.5} />, 
       image: 'https://images.unsplash.com/photo-1522337094846-8a81113522f0?auto=format&fit=crop&q=80&w=400',
       color: 'from-amber-50/20 to-yellow-50/10' 
     },
     { 
       name: 'Estética Facial', 
-      count: '10+ Artigos', 
+      headline: 'Cuidados, tratamentos e beleza da pele', 
       icon: <Smile size={18} strokeWidth={1.5} />, 
       image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&q=80&w=400',
       color: 'from-blue-50/20 to-cyan-50/10' 
     },
     { 
       name: 'Carreira', 
-      count: '14+ Artigos', 
+      headline: 'Comece, evolua e ganhe mais na beleza', 
       icon: <Briefcase size={18} strokeWidth={1.5} />, 
       image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=80&w=400',
       color: 'from-stone-50/40 to-stone-100/20' 
     },
     { 
       name: 'Empreendedorismo', 
-      count: '20+ Artigos', 
+      headline: 'Estratégias para transformar beleza em negócio', 
       icon: <TrendingUp size={18} strokeWidth={1.5} />, 
       image: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80&w=400',
       color: 'from-[#FFF5F0]/30 to-[#FAF2EE]/10' 
     },
     { 
       name: 'Tendências', 
-      count: '6+ Artigos', 
+      headline: 'Novidades, estilos e inspirações do momento', 
       icon: <Flame size={18} strokeWidth={1.5} />, 
       image: 'https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&q=80&w=400',
       color: 'from-[#FDF2F8]/30 to-[#FFF5F5]/10' 
@@ -240,12 +240,12 @@ export const Home: React.FC<HomeProps> = ({ articles, onNavigate }) => {
                   <h3 className="text-xs sm:text-sm font-sans font-bold text-stone-800 dark:text-[#EDE6E2] uppercase tracking-wide group-hover:text-[#C49B66] transition-colors leading-tight line-clamp-1">
                     {cat.name}
                   </h3>
-                  <p className="text-[10px] sm:text-xs text-stone-500 dark:text-[#A89D96] mt-0.5 font-medium">
-                    {cat.count}
+                  <p className="text-[10px] sm:text-[11px] text-stone-500 dark:text-[#A89D96] mt-1 font-normal leading-normal line-clamp-2 min-h-[2rem] sm:min-h-[2.5rem]">
+                    {cat.headline}
                   </p>
                 </div>
                 <div className="flex items-center space-x-1 text-[10px] sm:text-xs text-[#C49B66] font-bold mt-4 group-hover:translate-x-1 transition-all duration-300">
-                  <span>Acessar artigos</span>
+                  <span>Saiba mais</span>
                   <ArrowRight size={11} className="shrink-0" />
                 </div>
               </div>
